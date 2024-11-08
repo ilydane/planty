@@ -21,4 +21,8 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
+// test activation css théme enfant 
+
+
+
 // END ENQUEUE PARENT ACTION

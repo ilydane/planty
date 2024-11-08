@@ -11,3 +11,40 @@ Updated: 2024-11-05 20:12:02
 
 */
 
+.wpcf7-form {
+    background-color: #4CAF50; /* Fond vert pour le formulaire */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.wpcf7-form p label {
+    display: block;
+    color: white;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fond blanc pour les champs */
+    color: black; /* Texte noir dans les champs */
+}
+
+
+.wpcf7 .wpcf7-submit {
+    display: block;
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    background-color: #D8AFA2; /* Couleur de fond du bouton */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
