@@ -48,3 +48,31 @@ Updated: 2024-11-05 20:12:02
 }
 
 
+/* Style pour la section contenant la canette */
+.canette-planty {
+    position: relative; /* Permet de positionner les éléments enfants */
+    padding: 20px;
+    background-color: #f5e9e4; /* Couleur de fond similaire à l'image */
+}
+
+/* Image de feuilles en arrière-plan */
+.canette-planty::before {
+    content: "";
+    position: absolute;
+    top: 50%; /* Ajustez pour centrer verticalement */
+    left: 50%; /* Ajustez pour centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centre l'image */
+    background-image: url("URL_DE_VOTRE_IMAGE_DE_FEUILLES");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px; /* Ajustez selon la taille désirée */
+    height: 200px; /* Ajustez selon la taille désirée */
+    z-index: 1; /* Place l'image derrière la canette */
+    opacity: 0.6; /* Ajustez pour plus de transparence */
+}
+
+/* Style de la canette pour qu'elle reste devant */
+.canette-planty .elementor-widget-image {
+    position: relative;
+    z-index: 2; /* Place l'image de la canette devant les feuilles */
+}
