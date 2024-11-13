@@ -48,41 +48,37 @@ Updated: 2024-11-05 20:12:02
 }
 
 
-/* Style pour la section contenant la canette */
-.canette-planty {
-    position: relative; /* Permet de positionner les éléments enfants */
-    padding: 20px;
-    background-color: #f5e9e4; /* Couleur de fond similaire à l'image */
-}
 
-/* Image de feuilles en arrière-plan */
-.canette-planty::before {
-    content: "";
-    position: absolute;
-    top: 50%; /* Ajustez pour centrer verticalement */
-    left: 50%; /* Ajustez pour centrer horizontalement */
-    transform: translate(-50%, -50%); /* Centre l'image */
-    background-image: url("http://localhost/plantydeux/wp-content/uploads/2024/11/Group-4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 20px; /* Ajustez selon la taille désirée */
-    height: 20px; /* Ajustez selon la taille désirée */
-    z-index: 1; /* Place l'image derrière la canette */
-    opacity: 0.6; /* Ajustez pour plus de transparence */
-}
-
-/* Style de la canette pour qu'elle reste devant */
-.canette-planty .elementor-widget-image {
-    position: relative;
-    z-index: 2; /* Place l'image de la canette devant les feuilles */
-}
-
-
-
+/* Assure que le conteneur de la canette est en position relative */
 .elementor-widget-container {
     position: relative;
-    background-image: url('URL_DE_TA_FEUILLE'); /* Remplace par l'URL de l'image de la feuille */
-    background-size: 300px; /* Ajuste la taille des feuilles */
-    background-repeat: no-repeat;
-    background-position: 50% 20px; /* Ajuste pour positionner l’image autour de la canette */
+    background: none; /* Supprime l'arrière-plan */
 }
+
+/* Ajoute la feuille à gauche */
+.elementor-widget-container:before {
+    content: "";
+    position: absolute;
+    top: 20px; /* Ajuste la position verticale de la feuille */
+    left: -80px; /* Ajuste la position horizontale de la feuille (côté gauche) */
+    background-image: url('URL_DE_LA_FEUILLE'); /* Remplace par l'URL de ton image de feuille */
+    background-size: 100px 100px; /* Taille de la feuille, ajuste selon le rendu souhaité */
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+/* Ajoute la feuille en miroir à droite */
+.elementor-widget-container:after {
+    content: "";
+    position: absolute;
+    top: 20px; /* Ajuste pour aligner verticalement avec l'autre feuille */
+    right: -80px; /* Position côté droit */
+    background-image: url('URL_DE_LA_FEUILLE'); /* Utilise la même URL d'image */
+    background-size: 100px 100px; /* Taille de la feuille */
+    background-repeat: no-repeat;
+    transform: scaleX(-1); /* Effet miroir horizontal */
+    width: 100px;
+    height: 100px;
+}
+
