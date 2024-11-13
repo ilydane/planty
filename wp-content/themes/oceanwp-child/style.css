@@ -62,7 +62,7 @@ Updated: 2024-11-05 20:12:02
     top: 50%; /* Ajustez pour centrer verticalement */
     left: 50%; /* Ajustez pour centrer horizontalement */
     transform: translate(-50%, -50%); /* Centre l'image */
-    background-image: url("URL_DE_VOTRE_IMAGE_DE_FEUILLES");
+    background-image: url("http://localhost/plantydeux/wp-content/uploads/2024/11/Group-4.png;")
     background-size: cover;
     background-repeat: no-repeat;
     width: 200px; /* Ajustez selon la taille désirée */
