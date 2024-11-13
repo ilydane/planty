@@ -48,37 +48,3 @@ Updated: 2024-11-05 20:12:02
 }
 
 
-
-/* Assure que le conteneur de la canette est en position relative */
-.elementor-widget-container {
-    position: relative;
-    background: none; /* Supprime l'arrière-plan */
-}
-
-/* Ajoute la feuille à gauche */
-.elementor-widget-container:before {
-    content: "";
-    position: absolute;
-    top: 20px; /* Ajuste la position verticale de la feuille */
-    left: -80px; /* Ajuste la position horizontale de la feuille (côté gauche) */
-    background-image: url('URL_DE_LA_FEUILLE'); /* Remplace par l'URL de ton image de feuille */
-    background-size: 100px 100px; /* Taille de la feuille, ajuste selon le rendu souhaité */
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-}
-
-/* Ajoute la feuille en miroir à droite */
-.elementor-widget-container:after {
-    content: "";
-    position: absolute;
-    top: 20px; /* Ajuste pour aligner verticalement avec l'autre feuille */
-    right: -80px; /* Position côté droit */
-    background-image: url('URL_DE_LA_FEUILLE'); /* Utilise la même URL d'image */
-    background-size: 100px 100px; /* Taille de la feuille */
-    background-repeat: no-repeat;
-    transform: scaleX(-1); /* Effet miroir horizontal */
-    width: 100px;
-    height: 100px;
-}
-
