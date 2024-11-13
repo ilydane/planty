@@ -62,11 +62,11 @@ Updated: 2024-11-05 20:12:02
     top: 50%; /* Ajustez pour centrer verticalement */
     left: 50%; /* Ajustez pour centrer horizontalement */
     transform: translate(-50%, -50%); /* Centre l'image */
-    background-image: url("http://localhost/plantydeux/wp-content/uploads/2024/11/Group-4.png;")
+    background-image: url("http://localhost/plantydeux/wp-content/uploads/2024/11/Group-4.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px; /* Ajustez selon la taille désirée */
-    height: 200px; /* Ajustez selon la taille désirée */
+    width: 20px; /* Ajustez selon la taille désirée */
+    height: 20px; /* Ajustez selon la taille désirée */
     z-index: 1; /* Place l'image derrière la canette */
     opacity: 0.6; /* Ajustez pour plus de transparence */
 }
@@ -75,4 +75,14 @@ Updated: 2024-11-05 20:12:02
 .canette-planty .elementor-widget-image {
     position: relative;
     z-index: 2; /* Place l'image de la canette devant les feuilles */
+}
+
+
+
+.elementor-widget-container {
+    position: relative;
+    background-image: url('URL_DE_TA_FEUILLE'); /* Remplace par l'URL de l'image de la feuille */
+    background-size: 300px; /* Ajuste la taille des feuilles */
+    background-repeat: no-repeat;
+    background-position: 50% 20px; /* Ajuste pour positionner l’image autour de la canette */
 }
