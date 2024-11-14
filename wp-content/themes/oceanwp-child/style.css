@@ -10,19 +10,21 @@ Version: 4.0.2.1730833922
 Updated: 2024-11-05 20:12:02
 
 */
-
+/* Style général du formulaire */
 .wpcf7-form {
-    background-color: #4CAF50; /* Fond vert pour le formulaire */
+    background-color: #ECE2DA;
     padding: 20px;
     border-radius: 10px;
     color: white;
 }
 
+/* Style des labels */
 .wpcf7-form p label {
     display: block;
     color: white;
 }
 
+/* Style des champs Nom et Mail */
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="email"] {
     width: 100%;
@@ -31,15 +33,27 @@ Updated: 2024-11-05 20:12:02
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #ffffff; /* Fond blanc pour les champs */
-    color: black; /* Texte noir dans les champs */
+    background-color: #ffffff; /* Fond blanc */
+    color: black; /* Texte noir */
 }
 
+/* Style du champ Message */
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fond blanc */
+    color: black; /* Texte noir */
+}
 
+/* Style du bouton de soumission */
 .wpcf7 .wpcf7-submit {
     display: block;
-    margin: 0 auto; /* Centre le bouton horizontalement */
-    background-color: #D8AFA2; /* Couleur de fond du bouton */
+    margin: 0 auto;
+    background-color: #D8AFA2;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -49,26 +63,3 @@ Updated: 2024-11-05 20:12:02
 
 
 
-/* Style pour la feuille de gauche */
-.elementor-column:first-child img {
-    width: 120px; /* Ajustez la taille selon vos besoins */
-    transform: rotate(-20deg); /* Rotation pour donner un effet naturel */
-    position: relative;
-    left: -40px; /* Ajustez la position horizontale */
-    top: 40px; /* Ajustez la position verticale */
-}
-
-/* Style pour la feuille de droite (effet miroir) */
-.elementor-column:last-child img {
-    width: 120px; /* Ajustez la taille selon vos besoins */
-    transform: scaleX(-1) rotate(20deg); /* Effet miroir et rotation */
-    position: relative;
-    right: -40px; /* Ajustez la position horizontale */
-    top: 40px; /* Ajustez la position verticale */
-}
-
-/* Centrage de l'image de la canette dans la colonne centrale */
-.elementor-column:nth-child(2) img {
-    display: block;
-    margin: 0 auto;
-}
