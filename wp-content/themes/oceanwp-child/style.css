@@ -11,33 +11,21 @@ Updated: 2024-11-05 20:12:02
 
 */
 /* Style général du formulaire */
+
+/* Styles généraux pour tous les formulaires Contact Form 7 */
 .wpcf7-form {
-    background-color: #ECE2DA;
     padding: 20px;
     border-radius: 10px;
     color: white;
 }
 
-/* Style des labels */
 .wpcf7-form p label {
     display: block;
     color: white;
 }
 
-/* Style des champs Nom et Mail */
 .wpcf7-form input[type="text"],
-.wpcf7-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff; /* Fond blanc */
-    color: black; /* Texte noir */
-}
-
-/* Style du champ Message */
+.wpcf7-form input[type="email"],
 .wpcf7-form textarea {
     width: 100%;
     padding: 10px;
@@ -45,21 +33,31 @@ Updated: 2024-11-05 20:12:02
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #ffffff; /* Fond blanc */
-    color: black; /* Texte noir */
+    background-color: #ffffff; /* Fond blanc pour les champs */
+    color: black; /* Texte noir dans les champs */
 }
 
-/* Style du bouton de soumission */
 .wpcf7 .wpcf7-submit {
     display: block;
-    margin: 0 auto;
-    background-color: #D8AFA2;
+    margin: 0 auto; /* Centre le bouton horizontalement */
+    background-color: #D8AFA2; /* Couleur de fond du bouton */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Styles spécifiques pour le formulaire de la page 1 */
+.formulaire-page-1 .wpcf7-form {
+    background-color: #ECE2DA; /* Couleur de fond spécifique à la page 1 */
+}
+
+/* Styles spécifiques pour le formulaire de la page 2 */
+.formulaire-page-2 .wpcf7-form {
+    background-color: #D8AFA2; /* Couleur de fond spécifique à la page 2 */
+}
+
 
 
 
