@@ -61,6 +61,39 @@ Updated: 2024-11-05 20:12:02
 
 /*CSS page de commande */
 
+.product {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#fraise {
+    background-image: url('fraise.jpg');
+}
+
+#pamplemousse {
+    background-image: url('pamplemousse.jpg');
+}
+
+#framboise {
+    background-image: url('framboise.jpg');
+}
+
+#citron {
+    background-image: url('citron.jpg');
+}
+
+.quantity {
+    margin-top: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+}
 
 
 
