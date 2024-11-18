@@ -59,42 +59,13 @@ Updated: 2024-11-05 20:12:02
 }
 
 
-/*CSS page de commande */
-
-.product {
-    width: 150px;
+                                                    /*CSS page de commande */
+                                                    /* Input stylisé */
+.product input {
+    width: 40px; /* Réduction de la largeur du champ */
+    height: 30px; /* Réduction de la hauteur du champ */
     text-align: center;
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    color: white;
+    appearance: none; /* Supprime les flèches sur les navigateurs compatibles */
+    -moz-appearance: textfield; /* Supprime les flèches sur Firefox */
 }
-
-#fraise {
-    background-image: url('fraise.jpg');
-}
-
-#pamplemousse {
-    background-image: url('pamplemousse.jpg');
-}
-
-#framboise {
-    background-image: url('framboise.jpg');
-}
-
-#citron {
-    background-image: url('citron.jpg');
-}
-
-.quantity {
-    margin-top: 10px;
-}
-
-.quantity input {
-    width: 50px;
-    text-align: center;
-}
-
-
-
 
