@@ -72,3 +72,25 @@ Updated: 2024-11-05 20:12:02
 
 /* test onglet barnav */ 
 
+/* Style général pour le menu basé sur la page actuelle */
+
+/* Pour la page Accueil */
+body.home .hfe-nav-menu {
+    background-color: #AED581; /* Vert clair */
+}
+
+/* Pour la page "Commander" */
+body.page-id- .hfe-nav-menu-commander {
+    background-color: #E0B9B4; /* Rose pâle */
+}
+
+/* Exemple pour une autre page (remplacez XX par l'ID de la page) */
+body.page-id-YY .hfe-nav-menu {
+    background-color: #FFCDD2; /* Rouge clair */
+}
+
+/* Transition fluide pour un effet plus esthétique */
+.hfe-nav-menu {
+    transition: background-color 0.3s ease;
+}
+
