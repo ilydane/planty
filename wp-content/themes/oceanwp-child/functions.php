@@ -23,18 +23,14 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // test hook
 
-// Filtrer les éléments du menu pour afficher "Admin" uniquement pour les utilisateurs connectés
 function afficher_lien_admin_si_connecte($items, $args) {
-    // Vérifiez si l'utilisateur est connecté
     if (is_user_logged_in()) {
-        // Ajoutez un lien "Admin" à la navigation (modifiez selon votre slug)
-        $items .= '<li class="menu-item"><a href="' . site_url('/admin') . '">Admin</a></li>';
+        // Ajoutez le lien avec une classe spécifique pour styliser
+        $items .= '<li class="menu-item menu-item-admin"><a href="' . site_url('/admin') . '">Admin</a></li>';
     }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'afficher_lien_admin_si_connecte', 10, 2);
-
-
 
 
 

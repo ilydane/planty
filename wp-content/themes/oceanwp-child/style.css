@@ -72,7 +72,7 @@ Updated: 2024-11-05 20:12:02
 
 /* test onglet barnav */ 
 
-/* Style général pour le menu basé sur la page actuelle */
+
 
 /* Pour la page Accueil */
 body.home .hfe-nav-menu {
@@ -94,3 +94,10 @@ body.page-id-YY .hfe-nav-menu {
     transition: background-color 0.3s ease;
 }
 
+
+/* css du hook */
+.hfe-nav-menu  {
+    margin-top: 5px; /* Ajustez cette valeur selon vos besoins */
+    padding: 0;
+    line-height: normal;
+}
