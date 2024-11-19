@@ -34,6 +34,8 @@ add_filter('wp_nav_menu_items', 'afficher_lien_admin_si_connecte', 10, 2);
 
 
 
+// test navbar 
+
 
 
 
