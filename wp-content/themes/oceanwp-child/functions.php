@@ -25,18 +25,11 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 function afficher_lien_admin_si_connecte($items, $args) {
     if (is_user_logged_in()) {
-        // Ajoutez le lien avec une classe spécifique pour styliser
         $items .= '<li class="menu-item menu-item-admin"><a href="' . site_url('/admin') . '">Admin</a></li>';
     }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'afficher_lien_admin_si_connecte', 10, 2);
-
-
-
-// test navbar 
-
-
 
 
 // END ENQUEUE PARENT ACTION

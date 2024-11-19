@@ -1,15 +1,4 @@
-/*
-Theme Name: OceanWP Child
-Theme URI: https://oceanwp.org/
-Template: oceanwp
-Author: OceanWP
-Author URI: https://oceanwp.org/about-oceanwp/
-Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
-Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
-Version: 4.0.2.1730833922
-Updated: 2024-11-05 20:12:02
 
-*/
 /* Style général du formulaire */
 
 /* Styles généraux pour tous les formulaires Contact Form 7 */
@@ -60,10 +49,10 @@ Updated: 2024-11-05 20:12:02
 
 
                                                     /*CSS page de commande */
-                                                    /* Input stylisé */
+                                                
 .product input {
-    width: 40px; /* Réduction de la largeur du champ */
-    height: 30px; /* Réduction de la hauteur du champ */
+    width: 40px; 
+    height: 30px; 
     text-align: center;
     appearance: none; /* Supprime les flèches sur les navigateurs compatibles */
     -moz-appearance: textfield; /* Supprime les flèches sur Firefox */
@@ -75,7 +64,7 @@ Updated: 2024-11-05 20:12:02
 .current-menu-item > a.hfe-menu-item,
 .current_page_item > a.hfe-menu-item {
     background-color: #E0B9B4; /* Couleur de fond pour la page active */
-    color: #ffffff; /* Couleur du texte pour la page active */
+    color: #ffffff; 
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -84,19 +73,15 @@ Updated: 2024-11-05 20:12:02
 /* Style pour les autres liens */
 .hfe-menu-item {
     background-color: transparent;
-    color: #000000; /* Couleur des liens inactifs */
+    color: #000000; 
     text-decoration: none;
 }
 
 /* Animation pour le survol */
 .hfe-menu-item:hover {
-    background-color: #cccccc; /* Couleur au survol */
+    background-color: #cccccc; 
     color: #ffffff;
     transition: background-color 0.3s ease;
 }
 
 
-/* Pour la page Accueil */
-
-
-/* css du hook */
